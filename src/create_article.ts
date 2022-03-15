@@ -19,7 +19,7 @@ export const CreateArticle = async ()=>{
     const tweet = new Tweet();
     tweet.title = "A good day job for mellenial";
     tweet.Content = "India 2022 bugdet has spend over 14billion rupees on IT sector";
-    tweet.user = user;
+    tweet.user = Promise.resolve(user);
    
     await tweetrepo.save(tweet).catch((err)=>{console.log(err);
     })

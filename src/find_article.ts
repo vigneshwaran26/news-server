@@ -11,6 +11,6 @@ export const findArticle = async () => {
         console.log(err);
         })
         if(user)
-          console.log("user :", user ,user.tweets);
+          console.log("user :", user ,await user.tweets);
     
 }

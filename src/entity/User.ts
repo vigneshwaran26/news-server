@@ -18,6 +18,6 @@ export class User {
     AuthorUrl: string;
 
     @OneToMany((type) => Tweet, (tweet) => tweet.user)
-    tweets:Tweet[];
+    tweets:Promise<Tweet[]>;
 
 }
